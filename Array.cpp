@@ -5,13 +5,13 @@ using namespace std;
 
 int main() {
 	int temp;
-	int a[5];
-	for (int i = 0; i < 5; i++) {
+	int a[12];
+	for (int i = 0; i < 12; i++) {
 		cin >> a[i];
 	}
 	//ñîðòèðîâêà ïî âîçðîñòàíèþ
-	/*for (int i = 0; i < 4; i++) {
-		for (int j = 0; j < 4; j++) {
+	/*for (int i = 0; i < 11; i++) {
+		for (int j = 0; j < 11; j++) {
 			if (a[j] > a[j + 1]) {
 				temp = a[j];
 				a[j] = a[j + 1];
@@ -20,8 +20,8 @@ int main() {
 		}
 	}*/
 	//ñîðòèðîâêà ïî ñïàäàíèþ
-	for (int i = 0; i < 4; i++) {
-		for (int j = 0; j < 4; j++) {
+	for (int i = 0; i < 11; i++) {
+		for (int j = 0; j < 11; j++) {
 			if (a[j+1] > a[j]) {
 				temp = a[j+1];
 				a[j+1] = a[j];
@@ -29,7 +29,7 @@ int main() {
 			}
 		}
 	}
-	for (int i = 0; i < 5; i++) {
+	for (int i = 0; i < 12; i++) {
 		cout << a[i] << ' ';
 	}
 }
