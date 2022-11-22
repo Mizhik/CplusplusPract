@@ -9,8 +9,8 @@ int main() {
 	for (int i = 0; i < 12; i++) {
 		cin >> a[i];
 	}
-	//ñîðòèðîâêà ïî âîçðîñòàíèþ
-	/*for (int i = 0; i < 11; i++) {
+	//
+	for (int i = 0; i < 11; i++) {
 		for (int j = 0; j < 11; j++) {
 			if (a[j] > a[j + 1]) {
 				temp = a[j];
@@ -18,13 +18,16 @@ int main() {
 				a[j + 1] = temp;
 			}
 		}
-	}*/
-	//ñîðòèðîâêà ïî ñïàäàíèþ
+	}
+	for (int i = 0; i < 12; i++) {
+		cout << a[i] << ' ';
+	}
+	cout << endl;
 	for (int i = 0; i < 11; i++) {
 		for (int j = 0; j < 11; j++) {
-			if (a[j+1] > a[j]) {
-				temp = a[j+1];
-				a[j+1] = a[j];
+			if (a[j + 1] > a[j]) {
+				temp = a[j + 1];
+				a[j + 1] = a[j];
 				a[j] = temp;
 			}
 		}
