@@ -15,7 +15,7 @@ int main() {
 		a[i] = min + rand() % (max - min + 1);
 	}
 	for (int i = 0; i < 4; i++) {
-		if (a[i] == 0)
+		if (a[i] == 0&&index==-1)
 			index = i;
 
 	}
